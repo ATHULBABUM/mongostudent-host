@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({
   }));
 
 
-var nav=[{link:"/",title:'Add'},
+var nav=[{link:"/",title:'AddData'},
             {link:"/view",title:'ViewAll'},
             {link:"/search",title:'Search'},
             {link:"/edde",title:'Edit/Delete'}
@@ -52,7 +52,7 @@ app.get('/',function(req,res){
 res.render('add.ejs',
 {
 nav,
-title:"Library"
+title:"Mongo DB"
 }
 )});
 // app.listen(3000,()=>{
