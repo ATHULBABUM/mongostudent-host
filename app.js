@@ -27,28 +27,6 @@ const eddeRouter=require('./src/routes/eddeRouter')(nav);
 const searchRouter=require('./src/routes/searchRouter')(nav);
 
 /* without view engine*/
-// app.use(express.static(path.join(__dirname,"/public")));
-
-// app.get('/',(req,res)=>{
-//     res.sendFile(path.join(__dirname,"/src/views/index.html"));
-// });
-
-
-
-
-// app.listen(3000,()=>{
-//          console.log("listening to port "+chalk.green('3000') );
-//      });
-
-
-
-
-// app.get("/",(req,res)=>{
-// res.send("First express app");
-// });
-// app.listen(3000,()=>{
-//     console.log("listening to port "+chalk.green('3000') );
-// });
 
 
 
@@ -63,9 +41,6 @@ mongoose.connect("mongodb+srv://ATHULBABUM:amalbabu@cluster0-7ktkb.mongodb.net/t
 
 app.set('views','./src/views');
 app.set('view engine','ejs');
-// app.get('/',function(req,res){
-//     res.render('index.ejs',{list:['book1','book2','book3'],title:"Library"});
-
 
 
 
