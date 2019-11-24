@@ -19,7 +19,7 @@ var nav = [{ link: "/", title: 'AddData' },
 
 const viewRouter = require('./src/routes/viewRouter')(nav);//passing nav to booksRouter
 const addRouter = require('./src/routes/addRouter')(nav);
-const eddeRouter = require('./src/routes/editRouter')(nav);
+const eddeRouter = require('./src/routes/eddeRouter')(nav);
 const searchRouter = require('./src/routes/searchRouter')(nav);
 
 /* without view engine*/
@@ -27,7 +27,7 @@ app.use(express.static(path.join(__dirname, "/public")));
 app.use('/add', addRouter);
 app.use('/view', viewRouter);
 app.use('/search', searchRouter);
-app.use('/edde', editRouter);
+app.use('/edde', eddeRouter);
 
 mongoose.connect("mongodb+srv://ATHULBABUM:amalbabu@cluster0-7ktkb.mongodb.net/test?retryWrites=true&w=majority");
 //mongoose.connect("mongodb://localhost:27017/MyCollegeDb");
