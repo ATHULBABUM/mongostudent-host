@@ -11,8 +11,7 @@ function route(nav) {
         student.save();
         res.send(req.body);
     })
-
-
+   
     return addRouter;
 }
 module.exports = route;

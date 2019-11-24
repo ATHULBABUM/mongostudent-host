@@ -1,18 +1,18 @@
-var express = require('express');
-var eddeRouter=express.Router();
+// var express = require('express');
+// var eddeRouter=express.Router();
   
-function route(nav){
+// function route(nav){
 
 
-    eddeRouter.route("/")
-    .get((req,res)=>{
-        res.render("edde.ejs",{nav,title:"Edit/Delete"});
-    });
+//     eddeRouter.route("/")
+//     .get((req,res)=>{
+//         res.render("edde.ejs",{nav,title:"Edit/Delete"});
+//     });
 
-    eddeRouter.route('/save')
-    .post((req,res)=>{
-        console.log(req.body);
-    })
-    return eddeRouter;
-}
-module.exports=route;
+//     eddeRouter.route('/save')
+//     .post((req,res)=>{
+//         console.log(req.body);
+//     })
+//     return eddeRouter;
+// }
+// module.exports=route;
