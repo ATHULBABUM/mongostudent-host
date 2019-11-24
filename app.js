@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({
 var nav = [{ link: "/", title: 'AddData' },
 { link: "/view", title: 'ViewAll' },
 { link: "/search", title: 'Search' },
-{ link: "/edit", title: 'Edit/Delete' }
+{ link: "/edde", title: 'Edit/Delete' }
 ];
 
 const viewRouter = require('./src/routes/viewRouter')(nav);//passing nav to booksRouter
@@ -27,7 +27,7 @@ app.use(express.static(path.join(__dirname, "/public")));
 app.use('/add', addRouter);
 app.use('/view', viewRouter);
 app.use('/search', searchRouter);
-app.use('/edit', editRouter);
+app.use('/edde', editRouter);
 
 mongoose.connect("mongodb+srv://ATHULBABUM:amalbabu@cluster0-7ktkb.mongodb.net/test?retryWrites=true&w=majority");
 //mongoose.connect("mongodb://localhost:27017/MyCollegeDb");
